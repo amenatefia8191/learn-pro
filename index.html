@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn-pro</title>
+    <link rel="icon" href="/img/Frame 16.png" type="image/x-icon" />
+    <!------- boxicon CDN link,  ------>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <!-------   Css link    -------->
+
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-----  Tailwind CDN link---->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!--------  google-font LInk   ------->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&family=Martian+Mono:wght@100;200;300;400&family=Noto+Sans+Mono:wght@600&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Roboto+Mono:ital,wght@0,300;0,400;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header
+      class="fixed w-[100%] z-[1000] pt-[22px] pb-[22px] pr-[3em] pl-[3em] bg-tranparent transition-all duration-150"
+      id="header"
+    >
+      <nav class="flex items-center w-[92%] justify-between">
+        <a href="#home" for="logo">
+          <img src="/img/Frame 16.png" alt="the Logo of the web page" />
+        </a>
+
+        <div class=" ">
+          <ul
+            class="navList flex items-center gap-[10px] max-[768px]:absolute max-[768px]:flex-col "
+          >
+            <li>
+              <a
+                href="#home"
+                class="text-sm text-black hover:text-purple-800 font-[600] active:text-purple-600"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#Courses"
+                class="text-sm text-black hover:text-purple-800 font-[600]"
+                >Courses</a
+              >
+            </li>
+            <li>
+              <a
+                href="#Instructors"
+                class="text-sm text-black hover:text-purple-800 font-[600]"
+                >Instructors</a
+              >
+            </li>
+            <li>
+              <a
+                href="#Testimonials"
+                class="text-sm text-black hover:text-purple-800 font-[600]"
+                >Testimonials</a
+              >
+            </li>
+            <li>
+              <a
+                href="#Contact"
+                class="text-sm text-black hover:text-purple-800 font-[600]"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="flex gap-[10px]">
+          <button>
+            <a
+              href="login"
+              class="pt-[8px] pb-[8px] pl-[35px] pr-[35px] transition-all duration-300 rounded-full text-purple-500 border-[1px] border-[#7253A4] hover:bg-[#7253A4] hover:text-white hover:border-[0px]"
+              >Login</a
+            >
+          </button>
+          <button>
+            <a
+              href="sign In"
+              class="pt-[8px] pb-[8px] pl-[35px] pr-[35px] transition-all duration-300 rounded-full bg-[#7253A4] text-white hover:bg-transparent hover:text-[#7253A4] hover:border-[1px] hover:border-[#7253A4]"
+              >sign In</a
+            >
+          </button>
+          <div>
+            <i class='bx bx-menu text-[30px] cursor-pointer min-[950px]:hidden' id="menu"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!---------- Main the  parent of SECTiONs   ------->
+
+    <main>
+      <!-------- Hero Home section    ------->
+
+      <section
+        class="hero bg-[#F8F8F8] flex items-center justify-between"
+        id="home"
+      >
+        <div class="">
+          <h1
+            class="font-[700] shrink-0 max-[1536px]:text-[55px] max-[1280px]:text-[50px] max-[1024px]:text-[45px] max-[1022px]:text-[35px] max-[768px]:text-[30px]"
+          >
+            Embark on a <span class="text-purple-900">Delightful</span> <br />
+            Journey of <span class="text-purple-900">Growth</span> with <br />
+            <span class="text-purple-900">Online</span> Learning!
+          </h1>
+          <p
+            class="text-[16px] text-gray-400 font-[100] max-[1022px]:text-[13px]"
+          >
+            Explore our wide rgae of expert-led courses in coding, <br />
+            digital marketing, phontography, and more."
+          </p>
+          <br />
+          <div class="flex gap-[20px] mt-[20px]">
+            <button>
+              <a
+                href=""
+                class="bg-[#7253A4] pt-[16px] pb-[16px] pl-[28px] pr-[28px] text-[16px] text-white rounded max-[1022px]:text-[12px]"
+                >Get Started</a
+              >
+            </button>
+
+            <button>
+              <a
+                href=""
+                class="bg-transparent border-[1px] border-[#7253A4] pt-[16px] pb-[16px] pl-[28px] pr-[28px] text-[#7253A4] text-[16px] rounded max-[1022px]:text-[12px]"
+                >Get free trail</a
+              >
+            </button>
+          </div>
+          <br />
+
+          <div class="flex items-center gap-[89px] mt-[20px]">
+            <span
+              class="max-[1568]:text-[40px] text-[30px] text-[#C11574] leading-[1] max-[1022px]:leading-[1] max-[1022px]:text-[25px]"
+            >
+              50+ <br />
+              <span
+                class="text-[14px] text-black max-[1022px]:text-[12px] max-[1022px]:leading-[1.2]"
+                >Courses to <br />
+                choose from</span
+              ></span
+            >
+            <span
+              class="max-[1568]:text-[40px] text-[30px] text-[#7253A4] leading-[1] max-[1022px]:leading-[1] max-[1022px]:text-[25px]"
+            >
+              1000+ <br />
+              <span
+                class="text-[14px] text-black max-[1022px]:text-[12px] max-[1022px]:leading-[1.2]"
+                >Students <br />
+                Trained</span
+              ></span
+            >
+            <span
+              class="max-[1568]:text-[40px] text-[30px] text-[#F3B411] leading-[1] max-[1022px]:leading-[1] max-[1022px]:text-[25px]"
+            >
+              100+ <br />
+              <span
+                class="text-[14px] text-black max-[1022px]:text-[12px] max-[1022px]:leading-[1.2]"
+                >Professional <br />
+                Trainers</span
+              ></span
+            >
+          </div>
+        </div>
+
+        <figure>
+          <img
+            src="/img/Group 2.png"
+            alt="an image of a girl"
+            class="w-[554px] h-[543.968px] max-[1022px]:w-[443px] max-[1022px]:h-[443px]"
+          />
+        </figure>
+      </section>
+
+      <!--------  Courses  section    ------->
+
+      <section class="bg-[#FFFFFF]" id="Courses">
+        <h1 class="text-[23px] text-[#7253A4] text-center">
+          Our service <br />
+          <span
+            class="text-[36px] text-[#0E0A14] font-[500] leading-[44px] max-[1022px]:text-[30px]"
+            >Dive into an Interactive and Engaging Learning <br />
+            Adventure</span
+          >
+        </h1>
+
+        <div class="flex items-center justify-evenly mt-[40px]">
+          <div
+            class="flex flex-col gap-[18px] pt-[30px] pb-[30px] pr-[40px] pl-[40px] bg-[#7253A4] rounded-[10px] w-[330px] h-[260px] max-[1022px]:w-[300px]"
+          >
+            <figure class="flex items-center justify-around">
+              <img src="/img/Frame 391.png" alt="icon image" />
+              <figcaption
+                class="max-[1568px]:text-[24px] font-[700] text-white"
+              >
+                Web Development
+              </figcaption>
+            </figure>
+
+            <span
+              class="text-[14px] text-white font-[100] leading-[1.8] max-[1022px]:text-[12px]"
+            >
+              Unleash Your Coding Creativity: Stay Up-to-Date with Cutting-Edge
+              Design Lessons!
+            </span>
+            <br />
+
+            <span class="text-white text-[16px]"
+              ><span>Learn More </span> <i class="bx bx-chevron-right"></i>
+            </span>
+          </div>
+
+          <div
+            class="flex flex-col gap-[18px] pt-[30px] pb-[30px] pr-[40px] pl-[40px] bg-white border-[1px] border-[#646464] rounded-[10px] w-[330px] h-[260px] max-[1022px]:w-[300px]"
+          >
+            <figure class="flex items-center justify-around">
+              <img src="/img/Frame 392(1).png" alt="icon image" />
+              <figcaption
+                class="max-[1568px]:text-[24px] font-[800] text-black"
+              >
+                digital marketing
+              </figcaption>
+            </figure>
+
+            <span
+              class="text-[14px] text- font-[100] leading-[1.8] max-[1022px]:text-[12px]"
+            >
+              Master the Art of Digital Marketing: Stay Ahead with the Latest
+              Strategies and Innovations!
+            </span>
+            <br />
+
+            <span class="text-[#7253A4] text-[16px]"
+              ><span>Learn More </span> <i class="bx bx-chevron-right"></i>
+            </span>
+          </div>
+
+          <div
+            class="flex flex-col gap-[18px] pt-[30px] pb-[30px] pr-[40px] pl-[40px] bg-[#7253A4] border-[1px] border-[#646464] rounded-[10px] w-[330px] h-[260px] max-[1022px]:w-[300px]"
+          >
+            <figure class="flex items-center justify-around">
+              <img src="/img/Frame 392.png" alt="icon image" />
+              <figcaption
+                class="max-[1568px]:text-[24px] font-[800] text-white"
+              >
+                photography
+              </figcaption>
+            </figure>
+
+            <span
+              class="text-[14px] text-white font-[100] leading-[1.8] max-[1022px]:text-[12px]"
+            >
+              Capture the World Through Your Lens: Discover the Latest in
+              Photography Techniques and Trends!
+            </span>
+            <br />
+
+            <span class="text-white text-[16px]"
+              ><span>Learn More </span> <i class="bx bx-chevron-right"></i>
+            </span>
+          </div>
+        </div>
+
+        <div class="flex justify-center items-center mt-[40px]">
+          <button class="flex justify-center items-center">
+            <a
+              href="#"
+              class="bg-[#7253A4] text-[14px] capitalize pt-[15.73px] pb-[15.73px] pl-[13px] pr-[13px] rounded text-white"
+              >Explore All Courses</a
+            >
+          </button>
+        </div>
+
+        <div class="flex items-center justify-around mt-[40px]">
+          <figure>
+            <img src="/img/Group 114.png" alt="an image" class="" />
+          </figure>
+
+          <div>
+            <h3 class="text-black text-[30px]">
+              Benefits Of Learning Online <br />
+              With Learn-Pro
+            </h3>
+
+            <div class="mt-[40px]">
+              <div class="flex items-center gap-[70px]">
+                <div class="leading-[50px]">
+                  <figure
+                    class="bg-[#7253A4] w-[40px] rounded-[10px] flex items-center justify-center pt-[7px] pr-[7px] pl-[7px] pb-[7px]"
+                  >
+                    <img
+                      src="/img/Outline-1.png"
+                      alt="an image"
+                      class="w-[35px]"
+                    />
+                  </figure>
+                  <h4>Flexibility</h4>
+                  <p class="text-gray-500 text-[10px] leading-[2em]">
+                    Learn at your own pace from <br />
+                    anywhere, anytime.
+                  </p>
+                </div>
+
+                <div class="leading-[50px]">
+                  <figure
+                    class="bg-[#7253A4] w-[40px] rounded-[10px] flex items-center justify-center pt-[7px] pr-[7px] pl-[7px] pb-[7px]"
+                  >
+                    <img
+                      src="/img/Outline.png"
+                      alt="an image"
+                      class="w-[35px]"
+                    />
+                  </figure>
+                  <h4>Practical Skills</h4>
+                  <p class="text-gray-500 text-[10px] leading-[2em]">
+                    Gain hands-on experience through <br />
+                    interactive exercises and projects.
+                  </p>
+                </div>
+              </div>
+              <br />
+
+              <div class="flex items-center gap-[70px]">
+                <div class="leading-[50px]">
+                  <figure
+                    class="bg-[#7253A4] w-[40px] rounded-[10px] flex items-center justify-center pt-[7px] pr-[7px] pl-[7px] pb-[7px]"
+                  >
+                    <img
+                      src="/img/Outline-2.png"
+                      alt="an image"
+                      class="w-[35px]"
+                    />
+                  </figure>
+                  <h4>Diverse Course Selection</h4>
+                  <p class="text-gray-500 text-[10px] leading-[2em]">
+                    Choose from a variety of subjects <br />
+                    tailored to your interests and goals.
+                  </p>
+                </div>
+
+                <div class="leading-[50px]">
+                  <figure
+                    class="bg-[#7253A4] w-[40px] rounded-[10px] flex items-center justify-center pt-[7px] pr-[7px] pl-[7px] pb-[7px]"
+                  >
+                    <img
+                      src="/img/Outline-3.png"
+                      alt="an image"
+                      class="w-[35px]"
+                    />
+                  </figure>
+                  <h4>Supportive Community</h4>
+                  <p class="text-gray-500 text-[10px] leading-[2em]">
+                    Connect with like-minded learners and <br />
+                    instructors in our vibrant online community.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--------  INSTRUCTIONS   section    ------->
+
+      <section id="Instructors">
+        <h3 class="text-[30px] font-[700] text-center">
+          <span class="text-[20px] text-[#7253A4]">Instructor</span><br />
+          Meet the Brilliant Minds:
+        </h3>
+        <p class="text-center mt-[10px]">
+          At <strong>Learn-Pro,</strong> Unlock Limitless Knowledge and Skills
+          Today! Join our global <br />
+          community of passionate learners.
+        </p>
+
+        <div>
+          <div class="flex items-center justify-evenly mt-[40px] max-[1022px]:">
+            <div
+              class="pt-[24px] pb-[24px] pr-[24px] pl-[24px] w-[250px] h-[300px] bg-white border-[#E3E3E3] border-[1px] flex flex-col justify-evenly items-center max-[1022px]:w-[200px] max-[1022px]:h-[280px]"
+            >
+              <img src="/img/Avatar.png" alt="an image" class="w-[70px]" />
+              <p class="text-center">
+                <em
+                  ><b>Jackson Leo</b> <br />
+                  <span class="text-[#7253A4] leading-[40px] font-[100]"
+                    >UI/UX Designer Lead</span
+                  ></em
+                >
+              </p>
+              <p
+                class="text-[14px] text-black leading-[20px] max-[1022px]:text-[10px]"
+              >
+                Lorem ipsum dolor sit amet <br />
+                consectetur. Vitae ut sagittis <br />
+                tincidunt et fames dui turpis.
+              </p>
+              <i class="bx bxl-linkedin-square text-[20px]"></i>
+            </div>
+
+            <div
+              class="pt-[24px] pb-[24px] pr-[24px] pl-[24px] w-[250px] h-[300px] bg-white border-[#E3E3E3] border-[1px] flex flex-col justify-evenly items-center max-[1022px]:w-[200px] max-[1022px]:h-[280px]"
+            >
+              <img src="/img/Avatar(1).png" alt="an image" class="w-[70px]" />
+              <p class="text-center">
+                <em
+                  ><b>Perry Henry</b> <br />
+                  <span class="text-[#7253A4] leading-[40px] font-[100]"
+                    >Web development Lead</span
+                  ></em
+                >
+              </p>
+              <p
+                class="text-[14px] text-black leading-[20px] max-[1022px]:text-[10px]"
+              >
+                Lorem ipsum dolor sit amet <br />
+                consectetur. Vitae ut sagittis <br />
+                tincidunt et fames dui turpis.
+              </p>
+              <i class="bx bxl-linkedin-square text-[20px]"></i>
+            </div>
+
+            <div
+              class="pt-[24px] pb-[24px] pr-[24px] pl-[24px] w-[250px] h-[300px] bg-white border-[#E3E3E3] border-[1px] flex flex-col justify-evenly items-center max-[1022px]:w-[200px] max-[1022px]:h-[280px]"
+            >
+              <img src="/img/Avatar(2).png" alt="an image" class="w-[70px]" />
+              <p class="text-center">
+                <em
+                  ><b>kenny Marvin</b> <br />
+                  <span class="text-[#7253A4] leading-[40px] font-[100]"
+                    >Mobile development Lead</span
+                  ></em
+                >
+              </p>
+              <p
+                class="text-[14px] text-black leading-[20px] max-[1022px]:text-[10px]"
+              >
+                Lorem ipsum dolor sit amet <br />
+                consectetur. Vitae ut sagittis <br />
+                tincidunt et fames dui turpis.
+              </p>
+              <i class="bx bxl-linkedin-square text-[20px]"></i>
+            </div>
+
+            <div
+              class="pt-[24px] pb-[24px] pr-[24px] pl-[24px] w-[250px] h-[300px] bg-white border-[#E3E3E3] border-[1px] flex flex-col justify-evenly items-center max-[1022px]:w-[200px] max-[1022px]:h-[280px]"
+            >
+              <img src="/img/Avatar(3).png" alt="an image" class="w-[70px]" />
+              <p class="text-center">
+                <em
+                  ><b>Marry Jake</b> <br />
+                  <span class="text-[#7253A4] leading-[40px] font-[100]"
+                    >digital marketing Lead</span
+                  ></em
+                >
+              </p>
+              <p
+                class="text-[14px] text-black leading-[20px] max-[1022px]:text-[10px]"
+              >
+                Lorem ipsum dolor sit amet <br />
+                consectetur. Vitae ut sagittis <br />
+                tincidunt et fames dui turpis.
+              </p>
+              <i class="bx bxl-linkedin-square text-[20px]"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--------  Testimonials   section    ------->
+
+      <section
+        class="flex flex-col items-center justify-center gap-[30px]"
+        id="Testimonials"
+      >
+        <h3 class="text-[30px] text-black text-center">
+          <span class="text-[#7253A4] text-[20px]">Testimonials</span><br />
+          <b> Stories of Success and Satisfaction </b>
+        </h3>
+
+        <div
+          class="card flex items-center justify-evenly bg-white w-[55rem]
+           pt-[31px] pb-[31px] pr-[31px] pl-[31px] shadow-black-900 rounded-[10px] max-[950px]:w-[50rem] max-[950px]:pl-[25px] max-[950px]:pr-[20px] "
+        >
+          <figure>
+            <img
+              src="/img/Rectangle 483.png"
+              alt="an image"
+              class="w-[200px] max-[950px]:w-[300px]"
+            />
+            <figcaption class="text-center">
+              <p class="font-[700]">
+                <strong
+                  ><b><em>Jackson Leo</em></b></strong
+                >
+              </p>
+              <p class="text-[#7253A4]">
+                <small ><em> Founder and CEO Of Supreme </em></small>
+              </p>
+            </figcaption>
+          </figure>
+
+          <p class="text-black font-[100] text-[1px] max-[1022px]:text-[15px] max-[950px]:text-[3px]">
+            <i>
+              Learn Pro has been a remarkable journey of personal and
+              professional <br>
+              growth. From the moment I enrolled, I knew I was in the right
+              place. <br>
+              The courses offered a perfect balance of theory and practical
+              <br>
+              applications, giving me the knowledge and skills needed to excel
+              in my <br>
+              field.</i>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="bg-[#101828] w-full h-[400px] pt-[90px] pl-[80px] pr-[80px]"
+      id="Contact"
+    >
+      <div class="flex items-center justify-around">
+        <div class="flex flex-col leading-[2]">
+          <strong class="text-[#7253A4]">Learn-pro</strong><br />
+          <p class="text-white font-[100] text-[13px]">
+            Elevating Education, Igniting Potential, <br />
+            Empowering Success.
+          </p>
+        </div>
+        <div class="flex flex-col leading-[2]">
+          <strong class="text-[#7253A4]">product</strong><br />
+          <a href="#" class="text-white font-[100] text-[13px]">Home</a>
+          <a href="#" class="text-white font-[100] text-[13px]">Courses</a>
+          <a href="#" class="text-white font-[100] text-[13px]">Instructors</a>
+          <a href="#" class="text-white font-[100] text-[13px]">Testimonials</a>
+          <a href="#" class="text-white font-[100] text-[13px]">Contact</a>
+        </div>
+        <div class="flex flex-col leading-[2]">
+          <strong class="text-[#7253A4]">Support</strong><br />
+          <a href="#" class="text-white font-[100] text-[13px]">Account</a>
+          <a href="#" class="text-white font-[100] text-[13px]">Feedback</a>
+          <a href="#" class="text-white font-[100] text-[13px]">Contact us</a>
+          <a href="#" class="text-white font-[100] text-[13px]"
+            >Accessibility</a
+          >
+        </div>
+        <div class="flex flex-col leading-[2]">
+          <strong class="text-[#7253A4]">Socials</strong><br />
+          <a href="#" class="text-white font-[100] text-[13px]">Twitter</a>
+          <a href="#" class="text-white font-[100] text-[13px]">LinkedIn</a>
+          <a href="#" class="text-white font-[100] text-[13px]">GitHub</a>
+          <a href="#" class="text-white font-[100] text-[13px]">faceBook</a>
+        </div>
+        <figure class="flex flex-col gap-[10px]">
+          <img
+            src="/img/Google Play outline badge.png"
+            alt="an image"
+            class="w-[120px] h-[30px]"
+          />
+          <img
+            src="/img/App Store outline badge.png"
+            alt="an image"
+            class="w-[120px] h-[30px]"
+          />
+        </figure>
+      </div>
+
+      <div class="flex items-center justify-around pt-[100px]">
+        <p class="text-white text-[10px]">
+          © 2022 Learn-Pro. All rights reserved.
+        </p>
+        <div class="flex items-center gap-[20px]">
+          <i class="bx bxl-twitter" style="color: #ffffff"></i>
+          <i class="bx bxl-linkedin" style="color: #ffffff"></i>
+          <i class="bx bxl-facebook-square" style="color: #ffffff"></i>
+          <i class="bx bxl-github" style="color: #ffffff"></i>
+          <i class="bx bxl-internet-explorer" style="color: #ffffff"></i>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
